@@ -13,6 +13,9 @@
 
         <p><a href="${pageContext.request.contextPath}/index">一覧に戻る</a></p>
         <p><a href="${pageContext.request.contextPath}/edit?id=${message.id}">このメッセージを編集する</a></p>
+                    <c:otherwise>
+                <h2>お探しのデータは見つかりませんでした。</h2>
+            </c:otherwise>
 
     </c:param>
 </c:import>
